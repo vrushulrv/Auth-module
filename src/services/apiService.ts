@@ -9,7 +9,7 @@ export const RegisterUser = async (
 
   try {
     const response = await axios.post('http://localhost:8080/auth/register', {
-        email: email,password: password,
+        email: email,name: name,password: password,
     });
 
     console.log('Response:', response.data);
